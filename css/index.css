@@ -104,16 +104,14 @@ menu,
 nav,
 section {
   display: block;
- 
 }
 header {
   width: 100%;
   display: flex;
   justify-content: baseline;
-
 }
 header div img {
-    display: flex;
+  display: flex;
   margin: 20px;
 }
 
@@ -129,15 +127,19 @@ nav a {
   text-decoration: none;
   padding: 0px 25px 0px;
 }
+nav a:hover {
+  background-color: rgb(185, 213, 241);
+  color: black;
+}
 
 div img {
   margin: 20px auto;
   width: 100%;
-  
 }
 body {
   line-height: 1;
 }
+
 .top .container-about-page {
   display: inline;
 }
@@ -152,6 +154,13 @@ body {
   margin: 30px;
   border-bottom: 1px dotted black;
 }
+.container-about-page2 img{
+  transition: 1.5s; 
+}
+.container-about-page2 img:hover {
+  transform: rotate(360deg);
+}
+
 ol,
 ul {
   list-style: none;
@@ -199,7 +208,7 @@ p {
 .container {
   margin-left: 1.5%;
 }
- h2 {
+h2 {
   font-weight: bold;
 }
 
@@ -221,6 +230,20 @@ p {
 .middle-content {
   margin-bottom: 20px;
   border-bottom: 1px dashed black;
+  background-color: azure;
+  
+}
+.boxes {
+  animation-name: colorChange;
+  animation-duration: 5.35s;
+}
+@keyframes colorChange {
+  from {
+    background-color: dodgerblue;
+  }
+    to {
+    background-color: blueviolet;
+  }
 }
 
 .middle-content h2 {
@@ -300,7 +323,7 @@ footer nav {
   width: 100%;
   display: flex;
   justify-content: flex-start;
-    padding: 20px 2%; 
+  padding: 20px 2%;
   font-size: 14px;
 }
 
